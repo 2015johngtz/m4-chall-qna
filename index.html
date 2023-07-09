@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button id="view-high-scores-btn" class="btn">View High Scores</button>
+    <div id="status-container" class="status-container">
+        <p id="timer" class="status-item"></p>
+        <p id="answer-status" class="status-item"></p>
+        <p id="score-tracker" class="status-item"></p>
+    </div>
+    <div id="high-scores-container" class="hide">
+        <h1>High Scores</h1>
+        <ul id="high-scores-list"></ul>
+        <button id="back-btn" class="btn hide">Back</button>
+    </div>
+    <div id="results-container" class="hide">
+        <h1>Game Over</h1>
+        <h3>Your Score: <span id="score"></span></h3>
+        <label for="initials">Initials:</label>
+        <input type="text" id="initials">
+        <button id="save-btn" class="btn">Save Score</button>
+        <button id="start-over-btn" class="btn hide">Start Over</button>
+    </div>
+    <div id="quiz-container">
+        <button id="start-btn" class="btn">Start Quiz</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
